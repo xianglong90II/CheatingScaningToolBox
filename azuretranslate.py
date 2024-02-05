@@ -1,7 +1,7 @@
 import requests, uuid, json
 
 # Add your key and endpoint
-key = "dc6b0eff61084ec7937157fda87e9b97"
+# Key was deleted
 endpoint = "https://api.cognitive.microsofttranslator.com/"
 
 # location, also known as region.
@@ -18,7 +18,7 @@ headers = {
 
 path = '/translate'
 constructed_url = endpoint + path
-def aztranslate(text,options):
+def aztranslate(text,options,key):
     if options == "jpn" or options == "jp" or options == "ja":
         params = {
             'api-version': '3.0',
